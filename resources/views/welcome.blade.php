@@ -14,29 +14,38 @@
 
     </head>
     <body class="antialiased">
-        <div class="bg-main flex">
+        <div class="bg-main flex h-screen">
 
+            <div class="text-white lg:text-9xl sm:text-xl py-20 px-20 text-center">
 
-            <div class="text-white text-5xl py-20 px-20">
-                main div
-                
+                Home Brew Companion
+
                 <div class="bg-gray-400 bg-opacity-9 text-sm fixed bottom-0 left-0 px-6 py-4 sm:block">
-                    {{-- <span>Photo by <a href="https://unsplash.com/@peecho?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Claude Piché</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> --}}
-                    <span>Photo by <a href="https://unsplash.com/@timothycdykes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Timothy Dykes</a> on <a href="https://unsplash.com/s/photos/beer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+                    <span>Photo by <a href="https://unsplash.com/@peecho?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Claude Piché</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
                 </div>
             </div>
             {{-- RIGHT SIDE --}}
-            <div class="bg-gray-400 bg-opacity-50 lg:w-1/4 sm:w-full right-0 fixed h-screen shadow grid justify-items-center">
+            <div class="bg-gray-400 bg-opacity-50 lg:w-1/4 sm:w-full right-0 fixed h-screen shadow">
                 @if (Route::has('login'))
-                    <div class="pt-10">
+                    <div class="flex flex-col">
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="btn btn-blue">Dashboard</a>
+
+                            <div class="p-5">
+                                <a href="{{ url('/dashboard') }}" class="brd-btn">Dashboard</a>
+                            </div>
+                            
                         @else
-                            <a href="{{ route('login') }}" class="btn btn-blue">Login</a>
+
+                            <div class="p-5">
+                                <a href="{{ route('login') }}" class="brd-btn">Login</a>
+                            </div>
 
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="btn btn-blue">Register</a>
+                                <div class="p-5">
+                                    <a href="{{ route('register') }}" class="brd-btn">Register</a>
+                                </div>
                             @endif
+
                         @endauth
                     </div>
                 @endif

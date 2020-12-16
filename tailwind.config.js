@@ -9,7 +9,7 @@ module.exports = {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
             backgroundImage: theme => ({
-                'main': "url('/img/beer.jpeg')"
+                'main': "url('/img/main.jpeg')"
             }),
         },
     },

@@ -2,19 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* body {
-    background-image: url("/img/main.jpeg");
-    background-color: #cccccc;
-} */
-
-.btn {
-    @apply py-2 px-20 font-bold rounded m-auto;
+.brd-btn {
+    @apply border-solid py-2 px-20 m-8 text-white font-bold border-2 rounded border-white
 }
 
-.btn-blue {
-    @apply bg-blue-100 bg-opacity-50 text-black
-}
-
-.btn-blue:hover {
-    @apply bg-blue-500 bg-opacity-100 text-white;
+.brd-btn:hover {
+    @apply bg-blue-300 bg-opacity-100 text-white;
 }
