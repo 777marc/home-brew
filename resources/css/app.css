@@ -2,7 +2,19 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
-    background-image: url("/img/main.jpg");
+/* body {
+    background-image: url("/img/main.jpeg");
     background-color: #cccccc;
+} */
+
+.btn {
+    @apply py-2 px-20 font-bold rounded m-auto;
+}
+
+.btn-blue {
+    @apply bg-blue-100 bg-opacity-50 text-black
+}
+
+.btn-blue:hover {
+    @apply bg-blue-500 bg-opacity-100 text-white;
 }

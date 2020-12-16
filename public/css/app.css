@@ -4421,6 +4421,10 @@ select {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.bg-main {
+  background-image: url('/img/beer.jpeg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -31425,8 +31429,35 @@ select {
           animation: bounce 1s infinite;
 }
 
-.bg-img {
-  background-image: url('/img/main.jpg');
+/* body {
+    background-image: url("/img/main.jpeg");
+    background-color: #cccccc;
+} */
+
+.btn {
+  border-radius: 0.25rem;
+  font-weight: 700;
+  margin: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.btn-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity))
+}
+
+.btn-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -35106,6 +35137,10 @@ select {
 
   .sm\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .sm\:bg-main {
+    background-image: url('/img/beer.jpeg');
   }
 
   .sm\:from-transparent {
@@ -65713,6 +65748,10 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .md\:bg-main {
+    background-image: url('/img/beer.jpeg');
+  }
+
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -96316,6 +96355,10 @@ select {
 
   .lg\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .lg\:bg-main {
+    background-image: url('/img/beer.jpeg');
   }
 
   .lg\:from-transparent {
@@ -126923,6 +126966,10 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-main {
+    background-image: url('/img/beer.jpeg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -157526,6 +157573,10 @@ select {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-main {
+    background-image: url('/img/beer.jpeg');
   }
 
   .\32xl\:from-transparent {
