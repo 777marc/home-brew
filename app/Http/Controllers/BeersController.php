@@ -9,7 +9,7 @@ class BeersController extends Controller
 {
     public function index(Request $request)
     {
-        $beers = Beer::all();
+        $beers = Beer::orderBy('brew_date', 'desc')->get();
         return view('dashboard')->withBeers($beers);
     }
 }

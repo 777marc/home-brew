@@ -22,6 +22,7 @@
 
                 <div class="bg-gray-400 bg-opacity-9 text-sm fixed bottom-0 left-0 px-6 py-4 sm:block">
                     <span>Photo by <a href="https://unsplash.com/@peecho?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Claude Piché</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+                    <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                 </div>
             </div>
             {{-- RIGHT SIDE --}}
