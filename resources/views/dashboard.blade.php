@@ -45,6 +45,7 @@
 
                             </tbody>
                         </table>
+                        {{ $beers->links() }}
                         <div class="bg-gray-200 bg-opacity-9 text-sm fixed bottom-0 left-0 px-6 py-4 sm:block">
                             <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a></div>
                         </div>
