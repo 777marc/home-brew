@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [BeersController::class, 'index'])->name('dashboard');
+    Route::get('/show/{id}', [BeersController::class, 'show'])->name('show');
 });
 
 require __DIR__.'/auth.php';

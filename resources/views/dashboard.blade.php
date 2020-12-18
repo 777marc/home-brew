@@ -18,7 +18,7 @@
                                     <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Name</th>
                                     <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Brewed On</th>
                                     <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Days Old</th>
-                                    <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Actions</th>
+                                    <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -33,11 +33,10 @@
             
                                     <tr class="hover:bg-grey-lighter">
                                         <td class="py-4 px-6 border-b border-grey-light">{{ $beer->name }}</td>
-                                        <td class="py-4 px-6 border-b border-grey-light">{{ $beer->brew_date }}</td>
+                                        <td class="py-4 px-6 border-b border-grey-light">{{ Carbon\Carbon::parse($beer->brew_date)->format('m-d-Y') }}</td>
                                         <td class="py-4 px-6 border-b border-grey-light">{{ $diff }}</td>
                                         <td class="py-4 px-6 border-b border-grey-light">
-                                            <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark">Edit</a>
-                                            <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-blue hover:bg-blue-dark">View</a>
+                                            <a href="/show/{{ $beer->id }}" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-blue hover:bg-blue-dark">View</a>
                                         </td>
                                     </tr>
                                 @endforeach

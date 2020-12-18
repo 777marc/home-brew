@@ -9,3 +9,7 @@
 .brd-btn:hover {
     @apply bg-blue-300 bg-opacity-100 text-white;
 }
+
+.beer-card {
+    @apply w-1/2 h-2/4 rounded bg-yellow-200 p-5
+}

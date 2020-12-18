@@ -31453,6 +31453,15 @@ select {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.beer-card {
+  --tw-bg-opacity: 1;
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  height: 50%;
+  padding: 1.25rem;
+  width: 50%
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
